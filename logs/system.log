@@ -1,0 +1,759 @@
+2025-03-17 20:44:10 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-17 20:44:12 - INFO - [main.py:30] - 系统启动中...
+2025-03-17 20:44:12 - INFO - [control_panel.py:113] - 界面组件初始化完成
+2025-03-17 20:44:12 - INFO - [control_panel.py:44] - 控制面板初始化完成
+2025-03-17 20:44:15 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-17 20:44:15 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-17 20:44:15 - INFO - [control_panel.py:239] - 界面语言已更新为: English
+2025-03-17 20:44:16 - INFO - [components.py:89] - 已切换到dark主题
+2025-03-17 20:44:17 - INFO - [components.py:89] - 已切换到light主题
+2025-03-17 20:44:18 - INFO - [components.py:89] - 已切换到dark主题
+2025-03-17 20:44:19 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-17 20:44:19 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-17 20:44:19 - INFO - [control_panel.py:239] - 界面语言已更新为: 中文
+2025-03-17 20:44:21 - INFO - [components.py:89] - 已切换到light主题
+2025-03-17 20:44:29 - INFO - [video_processor.py:48] - 摄像头0初始化完成
+2025-03-17 20:44:29 - INFO - [control_panel.py:337] - 摄像头 0 已启动
+2025-03-17 20:44:33 - INFO - [video_processor.py:48] - 摄像头1初始化完成
+2025-03-17 20:44:33 - INFO - [control_panel.py:337] - 摄像头 1 已启动
+2025-03-17 20:44:33 - WARNING - [video_processor.py:145] - 尝试打开视频源失败 (尝试 1/3): 2
+2025-03-17 20:44:34 - WARNING - [video_processor.py:145] - 尝试打开视频源失败 (尝试 2/3): 2
+2025-03-17 20:44:36 - ERROR - [video_processor.py:149] - 无法打开视频源: 2
+2025-03-17 20:44:36 - ERROR - [video_processor.py:182] - 初始化摄像头失败: 无法打开视频源: 2
+2025-03-17 20:44:36 - ERROR - [video_processor.py:111] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-17 20:44:36 - ERROR - [video_processor.py:50] - 摄像头2初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 150, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 95, in _init_components
+    self.cap = self._init_capture()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 183, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 2
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 47, in __init__
+    self._init_components()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 120, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+
+2025-03-17 20:44:36 - ERROR - [camera_manager.py:63] - 启动摄像头2失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-17 20:44:36 - INFO - [control_panel.py:337] - 摄像头 2 已启动
+2025-03-17 20:44:38 - INFO - [video_processor.py:370] - Camera 1 触发 5秒 报警
+2025-03-17 20:44:43 - INFO - [video_processor.py:370] - Camera 1 触发 10秒 报警
+2025-03-17 20:44:48 - INFO - [video_processor.py:370] - Camera 1 触发 15秒 报警
+2025-03-17 20:44:50 - ERROR - [video_processor.py:506] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-17 20:44:51 - ERROR - [video_processor.py:506] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-17 20:44:51 - INFO - [control_panel.py:359] - 所有摄像头已停止
+2025-03-17 20:44:52 - INFO - [control_panel.py:395] - 系统正在关闭...
+2025-03-17 20:44:52 - INFO - [control_panel.py:359] - 所有摄像头已停止
+2025-03-18 08:55:25 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 08:55:27 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 08:55:28 - INFO - [control_panel.py:118] - 界面组件初始化完成
+2025-03-18 08:55:28 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-18 08:56:32 - INFO - [control_panel.py:400] - 系统正在关闭...
+2025-03-18 08:56:32 - INFO - [control_panel.py:364] - 所有摄像头已停止
+2025-03-18 08:57:03 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 08:57:04 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 08:57:05 - INFO - [control_panel.py:118] - 界面组件初始化完成
+2025-03-18 08:57:05 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-18 08:57:27 - ERROR - [video_processor.py:115] - 组件初始化失败: name 'camera_id' is not defined
+2025-03-18 08:57:27 - ERROR - [video_processor.py:51] - 摄像头0初始化失败: 组件初始化失败: name 'camera_id' is not defined
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 112, in _init_components
+    self.adaptive_roi = AdaptiveROI(camera_id)
+NameError: name 'camera_id' is not defined
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 48, in __init__
+    self._init_components()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 124, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: name 'camera_id' is not defined
+
+2025-03-18 08:57:27 - ERROR - [camera_manager.py:63] - 启动摄像头0失败: 组件初始化失败: name 'camera_id' is not defined
+2025-03-18 08:57:28 - INFO - [control_panel.py:342] - 摄像头 0 已启动
+2025-03-18 08:57:50 - INFO - [control_panel.py:364] - 所有摄像头已停止
+2025-03-18 08:57:52 - INFO - [control_panel.py:400] - 系统正在关闭...
+2025-03-18 08:57:52 - INFO - [control_panel.py:364] - 所有摄像头已停止
+2025-03-18 09:14:16 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 09:14:18 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 09:14:19 - ERROR - [control_panel.py:128] - 界面组件初始化失败: module 'tkinter.ttk' has no attribute 'Text'
+2025-03-18 09:14:19 - CRITICAL - [control_panel.py:48] - 控制面板初始化失败: module 'tkinter.ttk' has no attribute 'Text'
+2025-03-18 09:14:23 - CRITICAL - [main.py:36] - 系统崩溃: module 'tkinter.ttk' has no attribute 'Text'
+2025-03-18 09:26:08 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 09:26:09 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 09:26:09 - INFO - [control_panel.py:113] - 界面组件初始化完成
+2025-03-18 09:26:09 - INFO - [control_panel.py:44] - 控制面板初始化完成
+2025-03-18 09:26:20 - INFO - [video_processor.py:48] - 摄像头0初始化完成
+2025-03-18 09:26:20 - INFO - [control_panel.py:337] - 摄像头 0 已启动
+2025-03-18 09:26:24 - INFO - [video_processor.py:48] - 摄像头1初始化完成
+2025-03-18 09:26:24 - INFO - [control_panel.py:337] - 摄像头 1 已启动
+2025-03-18 09:26:28 - ERROR - [video_processor.py:506] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-18 09:26:29 - ERROR - [video_processor.py:506] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-18 09:26:29 - INFO - [control_panel.py:359] - 所有摄像头已停止
+2025-03-18 09:26:30 - INFO - [control_panel.py:395] - 系统正在关闭...
+2025-03-18 09:26:30 - INFO - [control_panel.py:359] - 所有摄像头已停止
+2025-03-18 09:26:52 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 09:26:53 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 09:26:54 - INFO - [control_panel.py:113] - 界面组件初始化完成
+2025-03-18 09:26:54 - INFO - [control_panel.py:44] - 控制面板初始化完成
+2025-03-18 09:26:59 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 09:26:59 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 09:26:59 - INFO - [control_panel.py:239] - 界面语言已更新为: English
+2025-03-18 09:27:00 - INFO - [components.py:89] - 已切换到dark主题
+2025-03-18 09:27:01 - INFO - [components.py:102] - 自动模式：已切换到light主题
+2025-03-18 09:27:01 - INFO - [components.py:76] - 已启用自动主题模式
+2025-03-18 09:27:03 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 09:27:03 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 09:27:03 - INFO - [control_panel.py:239] - 界面语言已更新为: 中文
+2025-03-18 09:27:05 - INFO - [control_panel.py:372] - 报警已暂停
+2025-03-18 09:27:06 - INFO - [control_panel.py:387] - 所有摄像头状态已重置
+2025-03-18 09:27:07 - INFO - [control_panel.py:359] - 所有摄像头已停止
+2025-03-18 09:27:14 - INFO - [video_processor.py:48] - 摄像头0初始化完成
+2025-03-18 09:27:14 - INFO - [control_panel.py:337] - 摄像头 0 已启动
+2025-03-18 09:27:17 - INFO - [video_processor.py:48] - 摄像头1初始化完成
+2025-03-18 09:27:17 - INFO - [control_panel.py:337] - 摄像头 1 已启动
+2025-03-18 09:27:17 - WARNING - [video_processor.py:145] - 尝试打开视频源失败 (尝试 1/3): 2
+2025-03-18 09:27:18 - WARNING - [video_processor.py:145] - 尝试打开视频源失败 (尝试 2/3): 2
+2025-03-18 09:27:19 - ERROR - [video_processor.py:149] - 无法打开视频源: 2
+2025-03-18 09:27:19 - ERROR - [video_processor.py:182] - 初始化摄像头失败: 无法打开视频源: 2
+2025-03-18 09:27:19 - ERROR - [video_processor.py:111] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-18 09:27:19 - ERROR - [video_processor.py:50] - 摄像头2初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 150, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 95, in _init_components
+    self.cap = self._init_capture()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 183, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 2
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 47, in __init__
+    self._init_components()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 120, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+
+2025-03-18 09:27:19 - ERROR - [camera_manager.py:63] - 启动摄像头2失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-18 09:27:19 - INFO - [control_panel.py:337] - 摄像头 2 已启动
+2025-03-18 09:27:25 - INFO - [video_processor.py:370] - Camera 1 触发 5秒 报警
+2025-03-18 09:27:30 - INFO - [video_processor.py:370] - Camera 1 触发 10秒 报警
+2025-03-18 09:27:39 - ERROR - [video_processor.py:506] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-18 09:27:39 - ERROR - [video_processor.py:506] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-18 09:27:39 - INFO - [control_panel.py:359] - 所有摄像头已停止
+2025-03-18 09:27:41 - INFO - [control_panel.py:395] - 系统正在关闭...
+2025-03-18 09:27:41 - INFO - [control_panel.py:359] - 所有摄像头已停止
+2025-03-18 09:35:33 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 09:35:34 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 09:35:35 - INFO - [control_panel.py:121] - 界面组件初始化完成
+2025-03-18 09:35:35 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-18 09:35:46 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 09:35:46 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 09:35:46 - INFO - [control_panel.py:247] - 界面语言已更新为: English
+2025-03-18 09:35:47 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 09:35:47 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 09:35:47 - INFO - [control_panel.py:247] - 界面语言已更新为: 中文
+2025-03-18 09:39:39 - INFO - [control_panel.py:403] - 系统正在关闭...
+2025-03-18 09:39:39 - INFO - [control_panel.py:367] - 所有摄像头已停止
+2025-03-18 09:54:18 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 09:54:19 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 09:54:19 - INFO - [control_panel.py:121] - 界面组件初始化完成
+2025-03-18 09:54:19 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-18 09:54:24 - INFO - [components.py:86] - 已切换到dark主题
+2025-03-18 09:54:25 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 09:54:25 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 09:54:25 - INFO - [control_panel.py:248] - 界面语言已更新为: 中文
+2025-03-18 09:54:25 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 09:54:25 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 09:54:25 - INFO - [control_panel.py:248] - 界面语言已更新为: English
+2025-03-18 09:54:28 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 09:54:28 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 09:54:28 - INFO - [control_panel.py:248] - 界面语言已更新为: 中文
+2025-03-18 09:54:30 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 09:54:30 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 09:54:30 - INFO - [control_panel.py:248] - 界面语言已更新为: English
+2025-03-18 09:54:33 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 09:54:33 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 09:54:33 - INFO - [control_panel.py:248] - 界面语言已更新为: 中文
+2025-03-18 09:54:36 - INFO - [components.py:86] - 已切换到light主题
+2025-03-18 09:54:36 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 09:54:36 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 09:54:36 - INFO - [control_panel.py:248] - 界面语言已更新为: English
+2025-03-18 09:54:37 - INFO - [components.py:86] - 已切换到dark主题
+2025-03-18 09:54:38 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 09:54:38 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 09:54:38 - INFO - [control_panel.py:248] - 界面语言已更新为: 中文
+2025-03-18 09:54:41 - INFO - [control_panel.py:404] - 系统正在关闭...
+2025-03-18 09:54:41 - INFO - [control_panel.py:368] - 所有摄像头已停止
+2025-03-18 10:07:23 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 10:41:51 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 10:41:53 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 10:41:53 - INFO - [control_panel.py:46] - 窗口图标加载失败，使用默认图标
+2025-03-18 10:41:54 - INFO - [control_panel.py:132] - 界面组件初始化完成
+2025-03-18 10:41:54 - INFO - [control_panel.py:52] - 控制面板初始化完成
+2025-03-18 10:42:04 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 10:42:04 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 10:42:04 - INFO - [control_panel.py:259] - 界面语言已更新为: English
+2025-03-18 10:42:05 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 10:42:05 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 10:42:05 - INFO - [control_panel.py:259] - 界面语言已更新为: 中文
+2025-03-18 10:42:07 - INFO - [components.py:102] - 已切换到dark主题
+2025-03-18 10:42:08 - INFO - [components.py:115] - 自动模式：已切换到light主题
+2025-03-18 10:42:08 - INFO - [components.py:89] - 已启用自动主题模式
+2025-03-18 10:42:10 - INFO - [control_panel.py:415] - 系统正在关闭...
+2025-03-18 10:42:10 - INFO - [control_panel.py:379] - 所有摄像头已停止
+2025-03-18 11:28:20 - INFO - [config.py:209] - 系统配置初始化完成
+2025-03-18 11:28:22 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 11:28:22 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-18 11:28:23 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-18 11:28:30 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 11:28:30 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 11:28:30 - INFO - [control_panel.py:252] - 界面语言已更新为: English
+2025-03-18 11:28:30 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 11:28:30 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 11:28:30 - INFO - [control_panel.py:252] - 界面语言已更新为: 中文
+2025-03-18 11:28:31 - INFO - [components.py:86] - 已切换到dark主题
+2025-03-18 11:28:32 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 11:28:32 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 11:28:32 - INFO - [control_panel.py:252] - 界面语言已更新为: English
+2025-03-18 11:28:33 - INFO - [components.py:86] - 已切换到light主题
+2025-03-18 11:28:35 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 11:28:35 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 11:28:35 - INFO - [control_panel.py:252] - 界面语言已更新为: 中文
+2025-03-18 11:28:37 - INFO - [components.py:86] - 已切换到dark主题
+2025-03-18 11:28:37 - INFO - [components.py:86] - 已切换到light主题
+2025-03-18 11:28:47 - INFO - [video_processor.py:48] - 摄像头0初始化完成
+2025-03-18 11:28:47 - INFO - [control_panel.py:350] - 摄像头 0 已启动
+2025-03-18 11:28:50 - INFO - [video_processor.py:48] - 摄像头1初始化完成
+2025-03-18 11:28:50 - INFO - [control_panel.py:350] - 摄像头 1 已启动
+2025-03-18 11:28:51 - WARNING - [video_processor.py:145] - 尝试打开视频源失败 (尝试 1/3): 2
+2025-03-18 11:28:52 - WARNING - [video_processor.py:145] - 尝试打开视频源失败 (尝试 2/3): 2
+2025-03-18 11:28:53 - ERROR - [video_processor.py:149] - 无法打开视频源: 2
+2025-03-18 11:28:53 - ERROR - [video_processor.py:182] - 初始化摄像头失败: 无法打开视频源: 2
+2025-03-18 11:28:53 - ERROR - [video_processor.py:111] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-18 11:28:53 - ERROR - [video_processor.py:50] - 摄像头2初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+Traceback (most recent call last):
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 150, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 95, in _init_components
+    self.cap = self._init_capture()
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 183, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 2
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 47, in __init__
+    self._init_components()
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 120, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+
+2025-03-18 11:28:53 - ERROR - [camera_manager.py:63] - 启动摄像头2失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-18 11:28:53 - INFO - [control_panel.py:350] - 摄像头 2 已启动
+2025-03-18 11:28:59 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 11:28:59 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 11:28:59 - INFO - [control_panel.py:252] - 界面语言已更新为: English
+2025-03-18 11:29:02 - INFO - [components.py:86] - 已切换到dark主题
+2025-03-18 11:29:03 - INFO - [video_processor.py:370] - Camera 1 触发 5秒 报警
+2025-03-18 11:29:03 - INFO - [components.py:99] - 自动模式：已切换到light主题
+2025-03-18 11:29:03 - INFO - [components.py:73] - 已启用自动主题模式
+2025-03-18 11:29:08 - INFO - [video_processor.py:370] - Camera 1 触发 10秒 报警
+2025-03-18 11:29:09 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 11:29:09 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 11:29:09 - INFO - [control_panel.py:252] - 界面语言已更新为: 中文
+2025-03-18 11:29:13 - INFO - [video_processor.py:370] - Camera 1 触发 15秒 报警
+2025-03-18 11:29:19 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 11:29:19 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 11:29:20 - INFO - [control_panel.py:252] - 界面语言已更新为: English
+2025-03-18 11:29:21 - INFO - [components.py:86] - 已切换到dark主题
+2025-03-18 11:29:25 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 11:29:25 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 11:29:26 - INFO - [control_panel.py:252] - 界面语言已更新为: 中文
+2025-03-18 11:29:27 - INFO - [components.py:86] - 已切换到light主题
+2025-03-18 11:29:28 - INFO - [video_processor.py:370] - Camera 1 触发 30秒 报警
+2025-03-18 11:29:33 - INFO - [config.py:156] - 已保存语言偏好设置: en_US
+2025-03-18 11:29:33 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-18 11:29:33 - INFO - [control_panel.py:252] - 界面语言已更新为: English
+2025-03-18 11:29:33 - INFO - [config.py:156] - 已保存语言偏好设置: zh_CN
+2025-03-18 11:29:33 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-18 11:29:33 - INFO - [control_panel.py:252] - 界面语言已更新为: 中文
+2025-03-18 11:29:37 - ERROR - [video_processor.py:506] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-18 11:29:37 - ERROR - [video_processor.py:506] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-18 11:29:37 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-18 11:29:38 - INFO - [control_panel.py:408] - 系统正在关闭...
+2025-03-18 11:29:38 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-18 14:05:15 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-18 14:05:17 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 14:05:17 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-18 14:05:18 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-18 14:05:32 - INFO - [video_processor.py:49] - 摄像头1初始化完成
+2025-03-18 14:05:32 - INFO - [control_panel.py:350] - 摄像头 1 已启动
+2025-03-18 14:05:37 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-18 14:05:46 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-18 14:05:51 - INFO - [video_processor.py:374] - Camera 1 触发 10秒 报警
+2025-03-18 14:05:53 - ERROR - [video_processor.py:522] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-18 14:05:53 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-18 14:05:55 - INFO - [control_panel.py:408] - 系统正在关闭...
+2025-03-18 14:05:55 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-18 16:18:17 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-18 16:18:19 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 16:18:19 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-18 16:18:19 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-18 16:18:25 - CRITICAL - [main.py:36] - 系统崩溃: [WinError 6] 句柄无效。
+2025-03-18 16:56:45 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-18 16:56:47 - INFO - [main.py:30] - 系统启动中...
+2025-03-18 16:56:47 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-18 16:56:47 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-18 16:56:49 - CRITICAL - [main.py:36] - 系统崩溃: [WinError 6] 句柄无效。
+2025-03-19 08:52:44 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-19 08:52:46 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 08:52:46 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 08:52:46 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 08:52:52 - CRITICAL - [main.py:36] - 系统崩溃: [WinError 6] 句柄无效。
+2025-03-19 09:05:49 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-19 09:05:51 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 09:05:51 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 09:05:51 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 09:06:11 - INFO - [video_processor.py:50] - 摄像头0初始化完成
+2025-03-19 09:06:11 - INFO - [control_panel.py:350] - 摄像头 0 已启动
+2025-03-19 09:06:11 - INFO - [control_panel.py:408] - 系统正在关闭...
+2025-03-19 09:06:12 - ERROR - [video_processor.py:531] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 09:06:12 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 09:06:21 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-19 09:06:22 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 09:06:23 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 09:06:23 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 09:06:39 - INFO - [video_processor.py:50] - 摄像头0初始化完成
+2025-03-19 09:06:39 - INFO - [control_panel.py:350] - 摄像头 0 已启动
+2025-03-19 09:06:41 - INFO - [control_panel.py:400] - 所有摄像头状态已重置
+2025-03-19 09:07:30 - ERROR - [video_processor.py:531] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 09:07:30 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 09:07:31 - INFO - [control_panel.py:408] - 系统正在关闭...
+2025-03-19 09:07:31 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 09:11:12 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-19 09:11:13 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 09:11:14 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 09:11:14 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 09:11:29 - INFO - [video_processor.py:50] - 摄像头0初始化完成
+2025-03-19 09:11:29 - INFO - [control_panel.py:350] - 摄像头 0 已启动
+2025-03-19 09:12:06 - ERROR - [video_processor.py:531] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 09:12:06 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 09:12:07 - INFO - [control_panel.py:408] - 系统正在关闭...
+2025-03-19 09:12:07 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 10:51:13 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-19 10:51:15 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 10:51:16 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 10:51:16 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 10:51:32 - INFO - [video_processor.py:50] - 摄像头0初始化完成
+2025-03-19 10:51:32 - INFO - [control_panel.py:350] - 摄像头 0 已启动
+2025-03-19 10:52:26 - ERROR - [video_processor.py:533] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 10:52:26 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 10:52:27 - INFO - [control_panel.py:408] - 系统正在关闭...
+2025-03-19 10:52:27 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 10:57:10 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-19 10:57:12 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 10:57:12 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 10:57:12 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 10:57:18 - INFO - [config.py:157] - 已保存语言偏好设置: en_US
+2025-03-19 10:57:18 - INFO - [language_selector.py:49] - 已切换语言到: English
+2025-03-19 10:57:18 - INFO - [control_panel.py:252] - 界面语言已更新为: English
+2025-03-19 10:57:20 - INFO - [config.py:157] - 已保存语言偏好设置: zh_CN
+2025-03-19 10:57:20 - INFO - [language_selector.py:49] - 已切换语言到: 中文
+2025-03-19 10:57:20 - INFO - [control_panel.py:252] - 界面语言已更新为: 中文
+2025-03-19 10:57:21 - INFO - [components.py:86] - 已切换到dark主题
+2025-03-19 10:57:31 - INFO - [video_processor.py:49] - 摄像头0初始化完成
+2025-03-19 10:57:31 - INFO - [control_panel.py:350] - 摄像头 0 已启动
+2025-03-19 10:57:35 - INFO - [video_processor.py:49] - 摄像头1初始化完成
+2025-03-19 10:57:35 - INFO - [control_panel.py:350] - 摄像头 1 已启动
+2025-03-19 10:57:42 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 10:57:47 - INFO - [video_processor.py:374] - Camera 1 触发 10秒 报警
+2025-03-19 10:57:51 - ERROR - [video_processor.py:522] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 10:57:52 - ERROR - [video_processor.py:522] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 10:57:52 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 10:57:53 - INFO - [control_panel.py:408] - 系统正在关闭...
+2025-03-19 10:57:53 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 11:31:24 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-19 11:31:25 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 11:31:26 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 11:31:26 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 11:31:39 - INFO - [video_processor.py:49] - 摄像头0初始化完成
+2025-03-19 11:31:39 - INFO - [control_panel.py:350] - 摄像头 0 已启动
+2025-03-19 11:31:43 - INFO - [video_processor.py:49] - 摄像头1初始化完成
+2025-03-19 11:31:43 - INFO - [control_panel.py:350] - 摄像头 1 已启动
+2025-03-19 11:32:05 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:32:10 - INFO - [video_processor.py:374] - Camera 1 触发 10秒 报警
+2025-03-19 11:32:15 - INFO - [video_processor.py:374] - Camera 1 触发 15秒 报警
+2025-03-19 11:32:30 - INFO - [video_processor.py:374] - Camera 1 触发 30秒 报警
+2025-03-19 11:32:42 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:32:42 - ERROR - [video_processor.py:522] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 11:32:42 - ERROR - [video_processor.py:522] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 11:32:49 - INFO - [video_processor.py:49] - 摄像头0初始化完成
+2025-03-19 11:32:49 - INFO - [control_panel.py:299] - 摄像头 0 已重启以应用新的ROI设置
+2025-03-19 11:32:53 - INFO - [video_processor.py:49] - 摄像头1初始化完成
+2025-03-19 11:32:53 - INFO - [control_panel.py:299] - 摄像头 1 已重启以应用新的ROI设置
+2025-03-19 11:32:53 - INFO - [control_panel.py:332] - 参数设置已更新
+2025-03-19 11:32:53 - WARNING - [camera_manager.py:45] - 摄像头0已在运行
+2025-03-19 11:32:54 - ERROR - [control_panel.py:356] - 摄像头0运行错误: 摄像头0已在运行
+2025-03-19 11:32:54 - WARNING - [camera_manager.py:45] - 摄像头1已在运行
+2025-03-19 11:32:55 - ERROR - [control_panel.py:356] - 摄像头1运行错误: 摄像头1已在运行
+2025-03-19 11:32:57 - WARNING - [camera_manager.py:45] - 摄像头0已在运行
+2025-03-19 11:32:58 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:32:58 - ERROR - [control_panel.py:356] - 摄像头0运行错误: 摄像头0已在运行
+2025-03-19 11:32:58 - WARNING - [camera_manager.py:45] - 摄像头1已在运行
+2025-03-19 11:32:59 - ERROR - [control_panel.py:356] - 摄像头1运行错误: 摄像头1已在运行
+2025-03-19 11:33:01 - INFO - [control_panel.py:408] - 系统正在关闭...
+2025-03-19 11:33:01 - ERROR - [video_processor.py:522] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 11:33:01 - ERROR - [video_processor.py:522] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 11:33:01 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 11:36:29 - INFO - [config.py:210] - 系统配置初始化完成
+2025-03-19 11:36:31 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 11:36:31 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 11:36:31 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 11:36:43 - INFO - [video_processor.py:49] - 摄像头0初始化完成
+2025-03-19 11:36:43 - INFO - [control_panel.py:350] - 摄像头 0 已启动
+2025-03-19 11:36:48 - INFO - [video_processor.py:49] - 摄像头1初始化完成
+2025-03-19 11:36:48 - INFO - [control_panel.py:350] - 摄像头 1 已启动
+2025-03-19 11:36:48 - WARNING - [video_processor.py:149] - 尝试打开视频源失败 (尝试 1/3): 2
+2025-03-19 11:36:49 - WARNING - [video_processor.py:149] - 尝试打开视频源失败 (尝试 2/3): 2
+2025-03-19 11:36:50 - ERROR - [video_processor.py:153] - 无法打开视频源: 2
+2025-03-19 11:36:50 - ERROR - [video_processor.py:186] - 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 11:36:50 - ERROR - [video_processor.py:115] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 11:36:50 - ERROR - [video_processor.py:51] - 摄像头2初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 154, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 99, in _init_components
+    self.cap = self._init_capture()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 187, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 2
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 48, in __init__
+    self._init_components()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 124, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+
+2025-03-19 11:36:50 - ERROR - [camera_manager.py:63] - 启动摄像头2失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 11:36:50 - INFO - [control_panel.py:350] - 摄像头 2 已启动
+2025-03-19 11:36:53 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:36:58 - INFO - [video_processor.py:374] - Camera 1 触发 10秒 报警
+2025-03-19 11:37:06 - INFO - [video_processor.py:374] - Camera 0 触发 5秒 报警
+2025-03-19 11:37:06 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:37:13 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:37:18 - INFO - [video_processor.py:374] - Camera 1 触发 10秒 报警
+2025-03-19 11:37:39 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:38:07 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:38:29 - WARNING - [video_processor.py:610] - 摄像头0 ROI设置超出范围: {'x': 250, 'y': 150, 'w': 800, 'h': 600}, 摄像头分辨率: 1280x720
+2025-03-19 11:38:29 - INFO - [video_processor.py:616] - 摄像头0 ROI已自动调整为: {'x': 250, 'y': 150, 'w': 800, 'h': 570}
+2025-03-19 11:38:29 - INFO - [video_processor.py:619] - 摄像头0 ROI设置已更新: {'x': 250, 'y': 150, 'w': 800, 'h': 570}
+2025-03-19 11:38:29 - WARNING - [video_processor.py:610] - 摄像头1 ROI设置超出范围: {'x': 250, 'y': 150, 'w': 800, 'h': 600}, 摄像头分辨率: 1280x720
+2025-03-19 11:38:29 - INFO - [video_processor.py:616] - 摄像头1 ROI已自动调整为: {'x': 250, 'y': 150, 'w': 800, 'h': 570}
+2025-03-19 11:38:29 - INFO - [video_processor.py:619] - 摄像头1 ROI设置已更新: {'x': 250, 'y': 150, 'w': 800, 'h': 570}
+2025-03-19 11:38:29 - INFO - [control_panel.py:317] - ROI设置已动态更新，无需重启摄像头
+2025-03-19 11:38:29 - INFO - [control_panel.py:332] - 参数设置已更新
+2025-03-19 11:39:15 - INFO - [video_processor.py:619] - 摄像头0 ROI设置已更新: {'x': 250, 'y': 150, 'w': 400, 'h': 300}
+2025-03-19 11:39:15 - INFO - [video_processor.py:619] - 摄像头1 ROI设置已更新: {'x': 250, 'y': 150, 'w': 400, 'h': 300}
+2025-03-19 11:39:15 - INFO - [control_panel.py:317] - ROI设置已动态更新，无需重启摄像头
+2025-03-19 11:39:15 - INFO - [control_panel.py:332] - 参数设置已更新
+2025-03-19 11:39:22 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:39:22 - INFO - [video_processor.py:374] - Camera 0 触发 5秒 报警
+2025-03-19 11:39:27 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:39:32 - INFO - [video_processor.py:374] - Camera 1 触发 10秒 报警
+2025-03-19 11:39:33 - INFO - [video_processor.py:374] - Camera 0 触发 5秒 报警
+2025-03-19 11:40:02 - INFO - [video_processor.py:374] - Camera 1 触发 5秒 报警
+2025-03-19 11:40:07 - INFO - [video_processor.py:374] - Camera 1 触发 10秒 报警
+2025-03-19 11:40:12 - INFO - [video_processor.py:374] - Camera 1 触发 15秒 报警
+2025-03-19 11:44:00 - ERROR - [video_processor.py:522] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 11:44:00 - ERROR - [video_processor.py:522] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 11:44:00 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 11:44:01 - INFO - [control_panel.py:408] - 系统正在关闭...
+2025-03-19 11:44:01 - INFO - [control_panel.py:372] - 所有摄像头已停止
+2025-03-19 14:42:33 - INFO - [config.py:212] - 系统配置初始化完成
+2025-03-19 14:42:34 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 14:42:35 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 14:42:35 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 14:42:48 - INFO - [video_processor.py:51] - 摄像头0初始化完成
+2025-03-19 14:42:48 - INFO - [control_panel.py:364] - 摄像头 0 已启动
+2025-03-19 14:42:48 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 1/3): 1
+2025-03-19 14:42:49 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 2/3): 1
+2025-03-19 14:42:50 - ERROR - [video_processor.py:152] - 无法打开视频源: 1
+2025-03-19 14:42:50 - ERROR - [video_processor.py:185] - 初始化摄像头失败: 无法打开视频源: 1
+2025-03-19 14:42:50 - ERROR - [video_processor.py:114] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+2025-03-19 14:42:50 - ERROR - [video_processor.py:53] - 摄像头1初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 153, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 98, in _init_components
+    self.cap = self._init_capture()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 186, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 50, in __init__
+    self._init_components()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 123, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+
+2025-03-19 14:42:50 - ERROR - [camera_manager.py:63] - 启动摄像头1失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+2025-03-19 14:42:50 - INFO - [control_panel.py:364] - 摄像头 1 已启动
+2025-03-19 14:42:50 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 1/3): 2
+2025-03-19 14:42:51 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 2/3): 2
+2025-03-19 14:42:52 - ERROR - [video_processor.py:152] - 无法打开视频源: 2
+2025-03-19 14:42:52 - ERROR - [video_processor.py:185] - 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 14:42:52 - ERROR - [video_processor.py:114] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 14:42:52 - ERROR - [video_processor.py:53] - 摄像头2初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 153, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 98, in _init_components
+    self.cap = self._init_capture()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 186, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 2
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 50, in __init__
+    self._init_components()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 123, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+
+2025-03-19 14:42:52 - ERROR - [camera_manager.py:63] - 启动摄像头2失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 14:42:52 - INFO - [control_panel.py:364] - 摄像头 2 已启动
+2025-03-19 14:43:10 - ERROR - [video_processor.py:513] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 14:43:10 - INFO - [control_panel.py:386] - 所有摄像头已停止
+2025-03-19 14:43:11 - INFO - [control_panel.py:422] - 系统正在关闭...
+2025-03-19 14:43:11 - INFO - [control_panel.py:386] - 所有摄像头已停止
+2025-03-19 15:31:42 - INFO - [config.py:212] - 系统配置初始化完成
+2025-03-19 15:31:44 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 15:31:45 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 15:31:45 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 15:31:58 - INFO - [video_processor.py:51] - 摄像头0初始化完成
+2025-03-19 15:31:58 - ERROR - [control_panel.py:183] - 交互式选择ROI失败: 'ControlPanel' object has no attribute 'status_update_id'
+2025-03-19 15:32:13 - INFO - [video_processor.py:596] - 摄像头0 ROI设置已更新: {'x': 200, 'y': 100, 'w': 800, 'h': 600}
+2025-03-19 15:32:13 - INFO - [control_panel.py:395] - ROI设置已动态更新，无需重启摄像头
+2025-03-19 15:32:13 - INFO - [control_panel.py:410] - 参数设置已更新
+2025-03-19 15:32:19 - ERROR - [control_panel.py:183] - 交互式选择ROI失败: 'ControlPanel' object has no attribute 'status_update_id'
+2025-03-19 15:32:22 - ERROR - [video_processor.py:513] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 15:32:22 - INFO - [control_panel.py:450] - 所有摄像头已停止
+2025-03-19 15:32:23 - INFO - [control_panel.py:486] - 系统正在关闭...
+2025-03-19 15:32:23 - INFO - [control_panel.py:450] - 所有摄像头已停止
+2025-03-19 15:37:08 - INFO - [config.py:212] - 系统配置初始化完成
+2025-03-19 15:37:09 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 15:37:09 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 15:37:09 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 15:37:18 - INFO - [video_processor.py:51] - 摄像头0初始化完成
+2025-03-19 15:37:18 - ERROR - [video_processor.py:632] - 交互式选择ROI失败: name 'os' is not defined
+2025-03-19 15:37:18 - ERROR - [video_processor.py:513] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 15:37:34 - INFO - [control_panel.py:450] - 所有摄像头已停止
+2025-03-19 15:37:36 - INFO - [control_panel.py:486] - 系统正在关闭...
+2025-03-19 15:37:36 - INFO - [control_panel.py:450] - 所有摄像头已停止
+2025-03-19 15:45:31 - INFO - [config.py:212] - 系统配置初始化完成
+2025-03-19 15:45:32 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 15:45:32 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 15:45:32 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 15:45:42 - INFO - [video_processor.py:51] - 摄像头0初始化完成
+2025-03-19 15:47:11 - INFO - [video_processor.py:373] - Camera 0 触发 5秒 报警
+2025-03-19 15:47:16 - INFO - [video_processor.py:373] - Camera 0 触发 10秒 报警
+2025-03-19 15:47:28 - CRITICAL - [main.py:36] - 系统崩溃: [WinError 6] 句柄无效。
+2025-03-19 20:05:00 - INFO - [config.py:212] - 系统配置初始化完成
+2025-03-19 20:05:02 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 20:05:02 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 20:05:03 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 20:05:48 - INFO - [video_processor.py:51] - 摄像头0初始化完成
+2025-03-19 20:05:48 - INFO - [control_panel.py:364] - 摄像头 0 已启动
+2025-03-19 20:05:48 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 1/3): 1
+2025-03-19 20:05:49 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 2/3): 1
+2025-03-19 20:05:50 - ERROR - [video_processor.py:152] - 无法打开视频源: 1
+2025-03-19 20:05:50 - ERROR - [video_processor.py:185] - 初始化摄像头失败: 无法打开视频源: 1
+2025-03-19 20:05:50 - ERROR - [video_processor.py:114] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+2025-03-19 20:05:50 - ERROR - [video_processor.py:53] - 摄像头1初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 153, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 98, in _init_components
+    self.cap = self._init_capture()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 186, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 50, in __init__
+    self._init_components()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 123, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+
+2025-03-19 20:05:50 - ERROR - [camera_manager.py:63] - 启动摄像头1失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+2025-03-19 20:05:50 - INFO - [control_panel.py:364] - 摄像头 1 已启动
+2025-03-19 20:05:50 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 1/3): 2
+2025-03-19 20:05:51 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 2/3): 2
+2025-03-19 20:05:52 - ERROR - [video_processor.py:152] - 无法打开视频源: 2
+2025-03-19 20:05:52 - ERROR - [video_processor.py:185] - 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 20:05:52 - ERROR - [video_processor.py:114] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 20:05:52 - ERROR - [video_processor.py:53] - 摄像头2初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 153, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 98, in _init_components
+    self.cap = self._init_capture()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 186, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 2
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 50, in __init__
+    self._init_components()
+  File "c:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 123, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+
+2025-03-19 20:05:52 - ERROR - [camera_manager.py:63] - 启动摄像头2失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 20:05:52 - INFO - [control_panel.py:364] - 摄像头 2 已启动
+2025-03-19 20:06:00 - INFO - [video_processor.py:592] - 摄像头0 ROI设置已更新: {'x': 200, 'y': 100, 'w': 600, 'h': 300}
+2025-03-19 20:06:00 - INFO - [control_panel.py:331] - ROI设置已动态更新，无需重启摄像头
+2025-03-19 20:06:00 - INFO - [control_panel.py:346] - 参数设置已更新
+2025-03-19 20:06:24 - ERROR - [video_processor.py:513] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 20:06:24 - INFO - [control_panel.py:386] - 所有摄像头已停止
+2025-03-19 20:07:09 - INFO - [control_panel.py:422] - 系统正在关闭...
+2025-03-19 20:07:09 - INFO - [control_panel.py:386] - 所有摄像头已停止
+2025-03-19 21:08:03 - INFO - [config.py:212] - 系统配置初始化完成
+2025-03-19 21:08:05 - INFO - [main.py:30] - 系统启动中...
+2025-03-19 21:08:05 - INFO - [control_panel.py:125] - 界面组件初始化完成
+2025-03-19 21:08:05 - INFO - [control_panel.py:45] - 控制面板初始化完成
+2025-03-19 21:08:33 - INFO - [video_processor.py:51] - 摄像头0初始化完成
+2025-03-19 21:08:33 - INFO - [control_panel.py:364] - 摄像头 0 已启动
+2025-03-19 21:08:33 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 1/3): 1
+2025-03-19 21:08:34 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 2/3): 1
+2025-03-19 21:08:35 - ERROR - [video_processor.py:152] - 无法打开视频源: 1
+2025-03-19 21:08:35 - ERROR - [video_processor.py:185] - 初始化摄像头失败: 无法打开视频源: 1
+2025-03-19 21:08:35 - ERROR - [video_processor.py:114] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+2025-03-19 21:08:35 - ERROR - [video_processor.py:53] - 摄像头1初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+Traceback (most recent call last):
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 153, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 98, in _init_components
+    self.cap = self._init_capture()
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 186, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 50, in __init__
+    self._init_components()
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 123, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+
+2025-03-19 21:08:35 - ERROR - [camera_manager.py:63] - 启动摄像头1失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 1
+2025-03-19 21:08:35 - INFO - [control_panel.py:364] - 摄像头 1 已启动
+2025-03-19 21:08:35 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 1/3): 2
+2025-03-19 21:08:36 - WARNING - [video_processor.py:148] - 尝试打开视频源失败 (尝试 2/3): 2
+2025-03-19 21:08:37 - ERROR - [video_processor.py:152] - 无法打开视频源: 2
+2025-03-19 21:08:37 - ERROR - [video_processor.py:185] - 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 21:08:37 - ERROR - [video_processor.py:114] - 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 21:08:37 - ERROR - [video_processor.py:53] - 摄像头2初始化失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+Traceback (most recent call last):
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 153, in _init_capture
+    raise RuntimeError(f"无法打开视频源: {source}")
+RuntimeError: 无法打开视频源: 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 98, in _init_components
+    self.cap = self._init_capture()
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 186, in _init_capture
+    raise RuntimeError(f"初始化摄像头失败: {str(e)}")
+RuntimeError: 初始化摄像头失败: 无法打开视频源: 2
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 50, in __init__
+    self._init_components()
+  File "C:\Users\33881\Desktop\ICU_Mediapipe\modules\video_processor.py", line 123, in _init_components
+    raise ResourceError(error_msg, 1003) from e
+modules.video_processor.VideoProcessor._init_components.<locals>.ResourceError: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+
+2025-03-19 21:08:37 - ERROR - [camera_manager.py:63] - 启动摄像头2失败: 组件初始化失败: 初始化摄像头失败: 无法打开视频源: 2
+2025-03-19 21:08:37 - INFO - [control_panel.py:364] - 摄像头 2 已启动
+2025-03-19 21:08:47 - INFO - [video_processor.py:596] - 摄像头0 ROI设置已更新: {'x': 200, 'y': 100, 'w': 600, 'h': 300}
+2025-03-19 21:08:47 - INFO - [control_panel.py:331] - ROI设置已动态更新，无需重启摄像头
+2025-03-19 21:08:47 - INFO - [control_panel.py:346] - 参数设置已更新
+2025-03-19 21:08:58 - ERROR - [video_processor.py:513] - 资源异常释放: Closing SolutionBase._graph which is already None
+2025-03-19 21:08:58 - INFO - [control_panel.py:386] - 所有摄像头已停止
+2025-03-19 21:09:00 - INFO - [control_panel.py:422] - 系统正在关闭...
+2025-03-19 21:09:00 - INFO - [control_panel.py:386] - 所有摄像头已停止

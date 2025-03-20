@@ -1,0 +1,15 @@
+# 核心依赖
+mediapipe>=0.10.0
+opencv-python>=4.7.0
+numpy>=1.22.0
+pygame>=2.1.0
+tk>=0.1.0
+sv-ttk>=2.4.0
+
+# 工具依赖
+matplotlib>=3.5.0
+pillow>=9.0.0
+
+# 日志和调试
+logging>=0.5.1.2
+traceback-with-variables>=2.0.4
