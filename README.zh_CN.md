@@ -76,7 +76,7 @@ ICU手部行为监测系统是一款专业级医疗监控解决方案，旨在�
 
 1. **克隆仓库**
 ```bash
-git clone https://github.com/yourusername/ICU_Mediapipe.git
+git clone https://github.com/Trueysh/ICU-Hand-Behavior-Monitoring-System-v3.2
 cd ICU_Mediapipe
 ```
 
