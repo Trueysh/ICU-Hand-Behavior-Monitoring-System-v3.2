@@ -75,7 +75,7 @@ This system addresses the critical challenge of monitoring ICU patients who may 
 
 1. **Clone Repository**
 ```bash
-git clone https://github.com/yourusername/ICU_Mediapipe.git
+git clone https://github.com/Trueysh/ICU-Hand-Behavior-Monitoring-System-v3.2
 cd ICU_Mediapipe
 ```
 
